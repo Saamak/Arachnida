@@ -1,6 +1,9 @@
 from pathlib import Path
 
 def flags_checker(inputs):
+    '''
+    Get user Input And config the program for the Scapping
+    '''
     print(inputs)
     i = 0
     args = inputs[:]
