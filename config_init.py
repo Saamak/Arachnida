@@ -46,7 +46,6 @@ def flags_checker(inputs):
                 raise ValueError(f"Argument inconnu ou URL multiple : {flag}")
     if config["url"] is None:
         raise ValueError("Missing URL")
-    
     try:
         path_obj = Path(config["path"])
         path_obj.mkdir(parents=True, exist_ok=True)

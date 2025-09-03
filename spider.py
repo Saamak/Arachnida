@@ -9,10 +9,12 @@ def main():
         hub(config)
     except ValueError as e:
         print(f"Erreur de valeur dans les arguments : {e}")
+        sys.exit(1)
     except IndexError as e:
         print(f"Argument manquant : {e}")
+        sys.exit(1)
     except Exception:
-        print("ERROR USER INPUT")
+        print("ERROR : Bad user input or Bad URL")
         sys.exit(1)
 
 
