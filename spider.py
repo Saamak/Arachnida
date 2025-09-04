@@ -8,13 +8,13 @@ def main():
         config = flags_checker(sys.argv[1:])
         hub(config)
     except ValueError as e:
-        print(f"Erreur de valeur dans les arguments : {e}")
+        print(f"Value error in arguments: {e}")
         sys.exit(1)
     except IndexError as e:
-        print(f"Argument manquant : {e}")
+        print(f"Missing argument: {e}")
         sys.exit(1)
     except Exception:
-        print("ERROR : Bad user input or Bad URL")
+        print("ERROR: Bad user input or Bad URL")
         sys.exit(1)
 
 
